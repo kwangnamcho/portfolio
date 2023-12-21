@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8" />
+   <title>portfolio</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+	   #wrap{
+	   		display: flex;
+			width: 1020px;
+			height: 2000px;
+			margin: 0 auto;
+			font-family: 'Pretendard-Regular';
+			}
+		
+		header{
+			display: block;
+			width: 200px;
+		}
+		
+		.mnu{
+			width: 200px;
+			height: 2000px;
+			background-color: #020202;
+		}
+		
+		.mnu>ul{
+			display: flex;
+			flex-direction: column;	
+			padding-top: 280px;
+			padding-left: 30px;
+		
+		}
+
+		.mnu>ul>li>a{
+			display: block;
+			padding-left: 10px;
+			color: #7b7b7b;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 50px;
+			border-bottom: 1px solid #7b7b7b;
+		}
+		
+		.mnu>ul>li:first-child{
+			border-top: 1px solid #7b7b7b;
+			background-color: white;
+		}
+		
+		.mnu>ul>li:hover>a{
+			color: black;
+			font-weight: 800;
+			background-color: white;
+		}
+		
+		.head{
+			display: absolute;
+			left: 100px;
+			width: 800px;
+			height: 250px;
+			padding-top: 30px;
+			background-image: url(./images/office.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		
+		.frame{
+		    overflow: hidden;
+		    position: relative;/*그림자 기준점*/
+		    width: 150px;
+		    height: 150px;
+		    margin: 0 auto;
+		    border: 3px solid lightgray;
+		    border-radius: 50%;
+		}
+		
+		.frame>img{
+			display: block;
+		    width: 150px;
+		    height: 150px;
+		}
+		
+		.head>.name>p{
+			display: block;
+			padding-top: 20px;
+			color: black;
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 30px;
+			text-align: center;
+		}
+		
+		.head>.name>p>span{
+			color: #7b7b7b;
+			font-weight: 400;
+			font-size: 15px;
+		}
+		
+		main{
+			display: block;
+			width: 850px;
+			height: 900px;
+		}
+		
+		main>section>.introduce>p:first-child{
+			padding: 30px;
+			color: #9ea0a0;
+			font-weight: 800;
+			font-size: 24px;
+			text-align: center;
+		}
+		
+		main>section>.introduce>p>span{
+			color: red;
+		}
+		
+		main>section>.introduce>p.goal{
+			color: #9ea0a0;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 25px;
+			text-align: center;
+		}
+		
+		.line{
+			position: relative;
+			margin-top: 30px;
+			left: 150px;
+			width: 500px;
+			height: 1px;
+			box-shadow: 1px 1px 3px;
+		}
+		
+		.comment-2{
+			width: 200px;
+			height: 50px;
+			margin: 50px auto;
+			text-align: center;
+			background-color: gray;
+			border-radius: 3%;
+			z-index: 100;
+		}
+		
+		.comment-2>p{
+			padding-top: 10px;
+			color: white;
+			font-weight: 600;
+			font-size: 30px;
+			line-height: 30px;
+			text-align: center;
+		}
+		
+		.square{
+			position: relative;
+			width: 500px;
+			height: 300px;
+			margin: -70px auto;
+			background-color: #white;
+			border-radius: 10%;
+			box-shadow: 1px 1px 2px;
+		}
+		   
+		.square>.challenge{
+			position: absolute;
+			top: 50px;
+			left: 20px;			
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			box-shadow: 1px 1px 10px gray;
+		}
+		   
+		.square>.challenge>p{
+			position: absolute;
+			top: 70px;
+			left: 25px;
+			text-align: center;
+		}
+		
+		.square>.challenge>p>a{
+			color: #9ea0a0;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 30px;
+		}
+						   
+		
+		.square>.challenge>p>a>span{
+			color: red;
+			font-weight: 600;
+			font-size: 25px;
+		}
+						   
+		.square>.experience{
+			position: absolute;
+			top: 50px;
+			left: 280px;			
+			width: 200px;
+			height: 200px;
+			background-color: #eeeeee;
+			border-radius: 50%;
+			box-shadow: 1px 1px 10px gray;
+		}
+		   
+		.square>.experience>p{
+			position: absolute;
+			top: 80px;
+			left: 40px;
+			text-align: center;
+		}
+		
+		.square>.experience>p>a{
+			color: red;
+			font-weight: 600;
+			font-size: 25px;
+		}
+						   
+		.square>.plus{
+			position: absolute;
+			top: 15px;
+			left: 185px;			
+			width: 20px;
+			height: 20px;
+		}
+		   
+		.square>.plus>p{
+			position: absolute;
+			top: 80px;
+			left: 40px;
+			text-align: center;
+		}
+		
+		.square>.plus>p>a{
+			color: #9ea0a0;
+			font-weight: 600;
+			font-size: 80px;
+		}
+				   
+   </style>
+</head>
+<body>
+ 	<div id="wrap">
+  		<header>
+  			<div class="mnu">
+  				<ul>
+  					<li><a href="#">Profile</a></li>
+  					<li><a href="#">Career</a></li>
+  					<li><a href="#">Portfolio</a></li>
+  					<li><a href="#">Goal</a></li>
+  					<li><a href="#">Contact me</a></li>
+  				</ul>
+  			</div>
+		</header>
+ 		
+ 		<main>
+	
+ 			<section>
+   				<div class="head">
+ 					<div class="frame">
+ 						<img src="./images/cho.jpg" alt="조광남" />	
+ 					</div>
+ 					<div class="name">
+ 						<p>
+ 						Kwang Nam Cho <br />
+ 						<span>Developer</span>
+ 						</p>
+ 					</div>	
+				</div>				
+ 				<div class="introduce">
+ 					<p>The best time for <span>new beginnings</span> is now</p>
+ 					<p class="goal">
+ 					Despite starting later than others, I have a strong determination to excel as a developer, <br />
+ 					even with around 10 years of experience in the HR field. <br />
+ 					I believe that with hard work and dedication, <br />
+ 					I can achieve success in this new career path and prove myself capable.
+ 					</p>
+ 				</div>
+ 				<div class="line"></div>
+ 				<div class="comment-2"><p>Synergy</p></div>
+ 				<div class="square">
+ 					<div class="challenge"><p><a href="#"><span>Challenge</span> <br /> (New beginning)</a></p></div>
+ 					<div class="plus"><p><a href="#">+</a></p></div>
+ 					<div class="experience"><p><a href="#">Experience</a></p></div>				
+ 				</div>
+ 			
+ 			</section>
+ 		
+ 		</main>
+ 	
+ 	</div>
+</body>
+</html>

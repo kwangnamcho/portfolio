@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+#wrap{
+	width: 1000px;
+	height: 2000px;
+	margin: 0 auto;
+}
+
+header{
+	width: 100%;
+	border: 1px solid red;
+}
+
+.mnu{
+	width: 200px;
+	height: 2000px;
+	background-color: #020202;
+	border: 1px solid blue;
+}
+
+.mnu>ul{
+	display: flex;
+	flex-direction: column;	
+	padding-top: 280px;
+	border: 1px solid yellow;
+
+}
+
+.mnu>ul>li{
+	padding-left: 10px;
+	border: 1px solid gray;
+}
+
+.mnu>ul>li>a{
+	display: block;
+	padding-left: 10px;
+	color: #7b7b7b;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 50px;
+	border-bottom: 1px solid #7b7b7b;
+}
+
+.mnu>ul>li:first-child{
+	border-top: 1px solid #7b7b7b;
+	background-color: white;
+}
+
+.mnu>ul>li:hover>a{
+	color: black;
+	font-weight: 600;
+	background-color: white;
+}
+
+.head{
+	display: absolute;
+	left: 100px;
+	width: 800px;
+	height: 250px;
+	padding-top: 30px;
+	background-image: url(./../images/office.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.frame{
+    overflow: hidden;
+    position: relative;/*그림자 기준점*/
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.frame>img{
+	display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.head>.name>p{
+	display: block;
+	padding-top: 20px;
+	color: #7b7b7b;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.head>.name>p>span{
+	font-weight: 400;
+	font-size: 15px;
+}
+
+main{
+	display: block;
+	width: 850px;
+	height: 900px;
+}
+
+main>section>.introduce>p:first-child{
+	padding: 30px;
+	color: #9ea0a0;
+	font-weight: 800;
+	font-size: 24px;
+	text-align: center;
+}
+
+main>section>.introduce>p.goal{
+	color: #9ea0a0;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.line{
+	position: relative;
+	margin-top: 30px;
+	left: 150px;
+	width: 500px;
+	height: 1px;
+	box-shadow: 1px 1px 3px;
+}
+
+.frame-2{
+	display: flex;
+    overflow: hidden;
+    position: relative;/*그림자 기준점*/
+    width: 800px;
+    height: 200px;
+    border-radius: 10px;
+    border: 10px solid red;
+ }
+      
+.frame-2>.tit-1{
+	display: block;    
+    width: 250px;
+    height: 200px;
+    color: #7b7b7b;
+    border: 10px solid black;
+}
+
+.frame-2>.tit-1>img{
+	width: 250px;
+    height: 180px;
+	opacity: 0.5;
+}
+      
+
+.frame-2>.tit-1>h2{
+	text-align: center;
+}
+      
